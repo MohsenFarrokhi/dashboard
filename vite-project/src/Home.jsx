@@ -1,7 +1,13 @@
+import ContactList from "./components/ContatcsList.jsx";
+
 const Home = () => {
     return (
         <div>
-          Home Page
+          <div>
+              <h1>Dashboard</h1>
+              <button>Add</button>
+          </div>
+            <ContactList/>
         </div>
     )
 }
