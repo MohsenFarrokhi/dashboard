@@ -1,8 +1,10 @@
 import axios from "axios";
 import {useEffect, useState} from "react";
+import Contact from "./Contact.jsx";
 
 
 const CONTACTS_API = "http://localhost:3000/contacts";
+
 const ContactList = () => {
     const [contacts, setContacts] = useState([]);
     useEffect(() => {
@@ -20,7 +22,7 @@ const ContactList = () => {
 
     return (
         <div>
-            {contacts.map((id, name, number) =>
+            {contacts.map(({id, name, number}) =>
                 <Contact
                     key={id}
                     name={name}

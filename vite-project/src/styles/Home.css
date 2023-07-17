@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    border-radius: 8px;
+    border: 1px solid #023a02;
+     padding: 10px;
+}
+
+.btn {
+    padding: 10px;
+    
+}

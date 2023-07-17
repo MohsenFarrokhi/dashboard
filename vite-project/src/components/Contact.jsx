@@ -1,5 +1,5 @@
 import '../styles/Contact.css'
-const Contatc = (name, number) => {
+const Contact = ({name, number}) => {
     return (
         <div className="card">
             <p>Name : {name}</p>
@@ -7,4 +7,4 @@ const Contatc = (name, number) => {
         </div>
     )
 }
-export default Contatc;
+export default Contact;
