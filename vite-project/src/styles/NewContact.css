@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+.header_New {
+    color: #263A29;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    text-align: center;
+}
+
+.header_New-text{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 32px;
+}
+
+.input_New{
+    display: flex;
+    justify-content: center;
+}
