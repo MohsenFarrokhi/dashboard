@@ -1,20 +1,18 @@
-.header_Home {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    color: #263A29;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 60px;
-}
 
-.header_Home-text{
+
+.name_Form {
+    border-radius: 8px;
+    border: 1px solid gray;
+    padding: 4px 8px;
+    margin-bottom: 4px;
     font-family: 'Exo 2', sans-serif;
-    font-size: 64px;
-    margin-bottom: 12px;
+    font-size: 12px;
+
+    width: 220px;
+    height: 30px;
 }
 
-.btn_Home {
+.btn_Form{
     padding: 8px 16px;
     border-radius: 8px;
     border: 1px solid #263A29;
@@ -27,8 +25,15 @@
     cursor: pointer;
 }
 
-.btn_Home:hover{
+.btn_Form:hover{
     color: white;
     background: #3D8361;
     font-weight: bold;
+}
+
+.form_Form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

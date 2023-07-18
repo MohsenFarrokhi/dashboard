@@ -1,6 +1,7 @@
 import {useState} from "react";
 import axios from "axios";
 import {useNavigate} from "react-router-dom";
+import '../styles/ContactForm.css'
 
 const CONTACTS_API = "http://localhost:3000/contacts";
 
@@ -27,9 +28,10 @@ const ContactForm = () => {
         }
     }
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="form_Form">
             <div>
                 <input
+                    className="name_Form"
                     placeholder="name"
                     value={name}
                     name="name"
@@ -38,16 +40,17 @@ const ContactForm = () => {
             </div>
             <div>
                 <input
+                    className="name_Form"
                     placeholder="phone number"
                     value={number}
                     name="number"
                     onChange={handleChange}/>
             </div>
-            <div>
                 <button
-                    type="submit">Add
+                    type="submit"
+                    className="btn_Form"
+                >Add
                 </button>
-            </div>
         </form>
     )
 }
