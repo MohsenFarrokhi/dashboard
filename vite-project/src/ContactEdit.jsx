@@ -47,7 +47,6 @@ export const ContactEdit = () => {
                 <p className="EditForm_head">Name: <span>{contacts.name}</span></p>
 
                 <p className="EditForm_head">Mobile: <span>{contacts.number}</span></p>
-
             </div>
             {edit ? (
                 <form onSubmit={handleSubmit}
