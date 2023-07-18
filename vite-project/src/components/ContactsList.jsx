@@ -2,7 +2,6 @@ import axios from "axios";
 import {useEffect, useState} from "react";
 import Contact from "./Contact.jsx";
 
-
 const CONTACTS_API = "http://localhost:3000/contacts";
 
 const ContactList = () => {
@@ -20,16 +19,32 @@ const ContactList = () => {
         getContacts();
     }, [])
 
+    const deleteContact = (id) => {
+        axios.delete(`${CONTACTS_API}/${id}`)
+            .then(response => {
+                setContacts(contacts.filter((contact) => contact.id !== id));
+            })
+            .catch(error => {
+                console.log(error);
+            })
+    }
+
+
+
     return (
         <div>
             {contacts.map(({id, name, number}) =>
                 <Contact
                     key={id}
+                    id={id}
                     name={name}
                     number={number}
+                    onDelete={() => deleteContact(id)}
                 />
             )}
+
         </div>
+
     )
 }
 
