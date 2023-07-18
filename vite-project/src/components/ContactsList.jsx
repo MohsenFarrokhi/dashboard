@@ -1,6 +1,7 @@
 import axios from "axios";
 import {useEffect, useState} from "react";
 import Contact from "./Contact.jsx";
+import '../styles/ContactList.css'
 
 const CONTACTS_API = "http://localhost:3000/contacts";
 
@@ -32,7 +33,7 @@ const ContactList = () => {
 
 
     return (
-        <div>
+        <div className="contactList">
             {contacts.map(({id, name, number}) =>
                 <Contact
                     key={id}
