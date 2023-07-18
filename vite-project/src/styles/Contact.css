@@ -1,6 +1,72 @@
-.card {
-    margin: 10px;
-    border: 1px solid #0707a2;
+.ContactCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 4px;
+    border: 1px solid #8E9775;
     border-radius: 8px;
     padding: 10px;
+    width: 80%;
+}
+
+p {
+    margin-bottom: 4px;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 12px;
+}
+
+.ContactBtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center
+}
+
+.DeleteBtn {
+    background: #FC2947;
+    color: black;
+    padding: 4px 8px;
+    border-radius: 8px;
+    border: 1px solid #FC2947;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: 'Exo', sans-serif;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-bottom: 4px;
+}
+
+.DeleteBtn:hover {
+    background: #D21312;
+    border: 1px solid #D21312;
+    color: white;
+}
+
+.EditBtn {
+    background: #F9D949;
+    color: black;
+    padding: 4px 8px;
+    border-radius: 8px;
+    border: 1px solid #F9D949;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: 'Exo', sans-serif;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.EditBtn:hover {
+    background: #FF8400;
+    border: 1px solid #FF8400;
+    color: white;
+}
+
+.ContactLink {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-decoration: none;
+    font-family: 'Exo', sans-serif;
+    font-weight: bold;
+    color: #263A29;
 }

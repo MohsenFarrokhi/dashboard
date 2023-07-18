@@ -15,7 +15,7 @@
 .btn_Form {
     padding: 8px 16px;
     border-radius: 8px;
-    border: 1px solid #263A29;
+    border: 1.5px solid #263A29;
     background: #C9F4AA;
     font-weight: bold;
     color: black;
@@ -28,6 +28,7 @@
 .btn_Form:hover{
     color: white;
     background: #3D8361;
+    border: 1.5px solid #C9F4AA;
     font-weight: bold;
 }
 
