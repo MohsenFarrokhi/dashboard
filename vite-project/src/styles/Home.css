@@ -14,19 +14,6 @@
     margin-bottom: 12px;
 }
 
-.btn_Home {
-    padding: 8px 16px;
-    border-radius: 8px;
-    border: 1px solid #263A29;
-    background: #C9F4AA;
-    font-weight: bold;
-    color: black;
-    font-size: 12px;
-    font-family: 'Exo 2', sans-serif;
-    transition: 0.3s;
-    cursor: pointer;
-}
-
 .btn_Home:hover{
     color: white;
     background: #3D8361;

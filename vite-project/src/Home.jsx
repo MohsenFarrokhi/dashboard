@@ -13,7 +13,7 @@ const Home = () => {
             <div className="header_Home">
                 <h1 className="header_Home-text">Dashboard</h1>
                 <button
-                    className="btn_Home"
+                    className="btn_Form"
                     onClick={handleClick}
                 >Add
                 </button>
