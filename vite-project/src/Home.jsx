@@ -9,9 +9,10 @@ const Home = () => {
         navigate("/new-contact");
     }
     return (
-        <div className="container">
+        <div className="containers">
             <div className="header_Home">
                 <h1 className="header_Home-text">Dashboard</h1>
+
                 <button
                     className="btn_Form"
                     onClick={handleClick}
